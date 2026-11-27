@@ -1,0 +1,442 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111111;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #111111;
+    border-bottom: 1px solid #C9A34A;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+}
+
+.logo {
+    color: #C9A34A;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #C9A34A;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 20px 60px;
+    background: linear-gradient(135deg, #111111, #292319);
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.subtitle {
+    color: #C9A34A;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #C9A34A;
+}
+
+.hero-content > p:not(.subtitle) {
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+.btn, .card-btn {
+    display: inline-block;
+    background: #C9A34A;
+    color: #111111;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover, .card-btn:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* PRODUK */
+.produk {
+    padding: 90px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title > p {
+    color: #C9A34A;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    color: #C9A34A;
+}
+
+.section-title span {
+    color: #cccccc;
+}
+
+.produk-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #1d1d1d;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #5d4b26;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #C9A34A;
+    box-shadow: 0 8px 25px rgba(201,163,74,0.2);
+}
+
+.product-image {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #C9A34A;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    color: #C9A34A;
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    font-size: 13px;
+}
+
+/* TENTANG */
+.tentang {
+    padding: 70px 10%;
+    text-align: center;
+    background: #1d1d1d;
+}
+
+.tentang h2 {
+    color: #C9A34A;
+    margin-bottom: 20px;
+}
+
+.tentang p {
+    max-width: 700px;
+    margin: auto;
+    color: #cccccc;
+}
+
+.tentang blockquote {
+    color: #C9A34A;
+    font-style: italic;
+    margin-top: 25px;
+}
+
+/* FOOTER */
+footer {
+    background: #080808;
+    text-align: center;
+    padding: 30px 15px;
+    border-top: 1px solid #C9A34A;
+}
+
+footer h3 {
+    color: #C9A34A;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #aaaaaa;
+    font-size: 13px;
+    margin: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-menu {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .produk-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
+
+
+/* HALAMAN KONTAK */
+.contact-main {
+    padding-top: 110px;
+    background: #111111;
+}
+
+.contact-heading {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-heading h1 {
+    font-size: 42px;
+    color: white;
+}
+
+.contact-heading h1 span {
+    color: #C9A34A;
+}
+
+.contact-heading p {
+    color: #cccccc;
+}
+
+.contact-form,
+.service-section,
+.location-section {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.contact-form h2,
+.service-section h2,
+.location-section h2 {
+    color: #C9A34A;
+    margin-bottom: 20px;
+}
+
+.contact-form fieldset {
+    border: 1px solid #C9A34A;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.contact-form legend {
+    color: #C9A34A;
+    padding: 0 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 15px 0 8px;
+    color: white;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    background: #222222;
+    color: white;
+    border: 1px solid #80672f;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background: #C9A34A;
+    color: #111111;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-buttons .reset-btn {
+    background: white;
+}
+
+/* TABEL LAYANAN */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1d1d1d;
+    color: white;
+}
+
+caption {
+    color: #C9A34A;
+    padding: 15px;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #80672f;
+    text-align: center;
+}
+
+th {
+    background: #C9A34A;
+    color: #111111;
+}
+
+/* LOKASI */
+.location-section {
+    text-align: center;
+}
+
+.location-section p {
+    color: #cccccc;
+}
+
+.location-placeholder {
+    margin-top: 25px;
+    padding: 65px 20px;
+    background: #222222;
+    border: 1px solid #C9A34A;
+    border-radius: 10px;
+}
+
+.location-placeholder p {
+    color: #C9A34A;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* RESPONSIVE KONTAK */
+@media (max-width: 768px) {
+    .contact-heading h1 {
+        font-size: 32px;
+    }
+
+    .contact-form,
+    .service-section,
+    .location-section {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-buttons button {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+
+
+/* RESPONSIVE IMAGE */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* GOOGLE MAPS */
+.peta {
+    max-width: 900px;
+    margin: 25px auto 0;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.peta iframe {
+    display: block;
+    width: 100%;
+}
